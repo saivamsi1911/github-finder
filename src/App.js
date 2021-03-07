@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navbar from './components/layout/Navbar';
+import UserItem from './components/users/UserItem';
 
 class App extends Component {
 	render() {
-		return React.createElement(
-			'div',
-			{ className: 'App' },
-			React.createElement('h1', null, 'Hello')
+		return (
+			<div className='App'>
+				<Navbar title='Github Finder' icon='fab fa-github' />
+				<UserItem />
+			</div>
 		);
 	}
 }
